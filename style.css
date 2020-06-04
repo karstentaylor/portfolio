@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Philosopher&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Header */
+header {
+  background-color: #b00606;
+  color: white;
+}
+header h1 {
+  font-family: "supernatural knight", cursive;
+  font-size: 52px;
+  text-align: center;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 10px 0 20px 0;
+}
+header nav ul li {
+  list-style: none;
+  font-family: "DM Serif Display", serif;
+}
+header nav li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Philosopher", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+img.rounded {
+  border-radius: 8px;
+  width: 50%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main h2 {
+  font-size: 28px;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+}
+
+main p {
+  font-family: "DM Serif Display", serif;
+  line-height: 1.5em;
+  margin-bottom: 0em;
+}
+
+/*  Main */
+a {
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+main .wrapper h2 {
+  padding-left: 10px;
+  margin-bottom: 0;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  font-family: "DM Serif Display", serif;
+}
+footer {
+  text-align: center;
+}
+
+hr {
+  height: 20px;
+  background-color: #b00606;
+}
+
+.note {
+  font-size: 15px;
+}
+
+img.placeholder {
+  width: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* Groups & Items  (Mobile First) */
+.wrapper {
+  width: 100%;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
+.list {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.red-link a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #b00606;
+}
+
+/* Groups & Items  (Desktop) */
+
+@media all and (min-width: 800px) {
+  .wrapper {
+    width: 80%;
+    margin: auto;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+}
+
+/*SECTIONS */
+#home,
+#contact,
+#work {
+  margin: 0 0 20px 0;
+}
+/* ABOUT ARTICLE */
+
+#about {
+  padding: 20px 0 30px 0;
+  margin: 0;
+}
+
+/* WORK*/
+#work {
+  background-color: #b00606;
+  color: white;
+}
+
+/* Contact Form */
+form {
+  padding-right: 6px;
+}
+form input,
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 100px;
+}
+
+@media all and (min-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  header h1 {
+    margin: 14px 0 14px 14px;
+    padding-top: 0;
+  }
+  header nav {
+    margin-top: 35px;
+  }
+}
